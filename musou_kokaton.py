@@ -375,7 +375,7 @@ def main():
                 shield.add(Shield(bird, 400))
                 score.score-=50
 
-            if event.type == pg.KEYDOWN and event.key == pg.K_RSHIFT and score.score > 0:
+            if event.type == pg.KEYDOWN and event.key == pg.K_RSHIFT and score.score > 100:
                 score.score_down(100)
                 bird.change_state("hyper",500)
 
