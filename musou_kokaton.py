@@ -294,9 +294,9 @@ def main():
                 return 0
             if event.type == pg.KEYDOWN and event.key == pg.K_SPACE:
                 beams.add(Beam(bird))
-                if score.score > 5:
+                if score.score > 50:
                     gravity.add(Gravity(bird,200,500))
-                    score.score -= 5
+                    score.score -= 50
         screen.blit(bg_img, [0, 0])
 
         if tmr%200 == 0:  # 200フレームに1回，敵機を出現させる
