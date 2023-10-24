@@ -215,7 +215,6 @@ class Gravity(pg.sprite.Sprite):
         self.image.set_alpha(200)
         self.rect = self.image.get_rect(center=bird.rect.center)
         
-
     def update(self):
         self.life -= 1
         if self.life < 0:
